@@ -12,7 +12,7 @@ FROM projects
 LEFT JOIN pledges
 ON projects.id = pledges.project_id
 ORDER BY(project.titles) ASC
-GROUP BY(projects);"
+GROUP BY(projects.titles);"
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
